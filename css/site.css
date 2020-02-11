@@ -62,10 +62,12 @@ ul > li > a {
 }
 .description-container > .figure-description{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-style: italic;
+    padding: 0 0 10% 0;
 }
 .description-container > .figure-description > figcaption {
     color: var(--bg-color);
