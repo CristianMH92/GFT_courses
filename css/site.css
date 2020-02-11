@@ -7,18 +7,22 @@
 	outline: none;
 }
 :root {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'sans-serif';
     --color-font: #fff;
     --bg-color: #296d79;
+}
+h1{
+    font-size: 3vh;
 }
 main {
     padding: 0 10%;
 }
 nav {
-    font-size: 2vh;
+    font-size: 2.5vh;
     color: var(--color-font);
 }
 ul {
+    padding: 10px;
     display: flex;
     height: 7vh;
     /* border: 5px solid tomato; */
@@ -28,7 +32,6 @@ ul {
     flex-direction: row;
     align-items: center;
 }
-
 ul > li:first-child {
     flex-grow: 30;
 }
@@ -51,7 +54,7 @@ ul > li > a {
     text-align: justify;
     justify-self: center;
     align-self: center;
-    margin: 2%;
+    padding: 10px;
 }
 .description-container > .article-description  > p {
     margin-top: 2%;
@@ -61,12 +64,13 @@ ul > li > a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-style: italic;
 }
 .description-container > .figure-description > figcaption {
-    color: #3a747e;
+    color: var(--bg-color);
 }
 .description-container > .figure-description > img{
-    padding: 5% 10% 0 5%;
+    padding: 5% 10px 0 5%;
 }
 .main-container {
     display: flex;
@@ -75,13 +79,13 @@ ul > li > a {
     flex-direction: row;
 }
 .main-container > .article-main {
-    margin: 2%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
 }
 .main-container > .article-main > p {
-    margin: 2% 0;
+    padding: 10px 0;
 }
 .main-container > .article-main > p:nth-child(4) {
     padding-bottom: 30%;
@@ -104,11 +108,16 @@ ul > li > a {
     padding: 5px;
     margin: 0 5px 0 5px;
 }
+.main-container > .aside-posts > figure:hover {
+    background-color: rgb(207, 207, 207);
+}
 .main-container > .aside-posts > figure > img{
     width: 100%;
 }
 .main-container > .aside-posts > figure > figcaption{
     text-align: center;
+    font-style: italic;
+    color: grey;
 }
 footer {
     display: flex;
