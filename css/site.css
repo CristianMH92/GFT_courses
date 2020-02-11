@@ -18,11 +18,10 @@ main {
     padding: 0 10%;
 }
 nav {
-    font-size: 2.5vh;
+    font-size: 2vh;
     color: var(--color-font);
 }
 ul {
-    padding: 10px;
     display: flex;
     height: 7vh;
     /* border: 5px solid tomato; */
@@ -37,7 +36,8 @@ ul > li:first-child {
 }
 
 ul > li {
-    flex-grow: 2;
+    padding: 10px;
+    flex-grow: 1;
 }
 
 ul > li > a {
@@ -55,6 +55,7 @@ ul > li > a {
     justify-self: center;
     align-self: center;
     padding: 10px;
+    flex-grow: 1;
 }
 .description-container > .article-description  > p {
     margin-top: 2%;
@@ -70,7 +71,7 @@ ul > li > a {
     color: var(--bg-color);
 }
 .description-container > .figure-description > img{
-    padding: 5% 10px 0 5%;
+    padding: 5% 10% 0 10%;
 }
 .main-container {
     display: flex;
@@ -98,7 +99,7 @@ ul > li > a {
     flex-wrap: wrap;
 }
 .main-container > .aside-posts > h1 {
-    margin: 3% 0;
+    padding: 5px;
     flex: 1 0 100%;
 }
 .main-container > .aside-posts > figure {
