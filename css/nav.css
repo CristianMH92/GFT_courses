@@ -1,0 +1,37 @@
+nav {
+    font-size: 2.7vh;
+}
+ul{
+    display: flex;
+    height: 5vh;
+    border: 5px solid tomato;
+    background-color: wheat;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul > li:first-child {
+    flex-grow: 30;
+}
+
+ul > li {
+    flex-grow: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+        <nav>
+            <ul>
+                <li><a>Logo</a></li>
+                <li><a href="" class="link">Section 1</a></li>
+                <li><a href="" class="link">Section 2</a></li>
+                <li><a href="" class="link">Section 3</a></li>
+                <li><a href="" class="link">Section 4</a></li>
+            </ul>
+        </nav>
+*/
